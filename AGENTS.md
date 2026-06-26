@@ -7,6 +7,7 @@ product is, what it must do, and what was done last.
 | -------- | ------- |
 | [`docs/requirements.md`](docs/requirements.md) | **Source of truth** — numbered requirements (`FR-*`, `NFR-*`, `TC-*`, `BC-*`) with status. Cite these IDs in specs, tests, and PRs. |
 | [`docs/product-brief.md`](docs/product-brief.md) | **Business narrative** — who the product is for, the pain it solves, and UX intent. Use for context; defer to requirements when they differ. |
+| [`docs/capabilities.md`](docs/capabilities.md) | **Implementation plan** — capability inventory, build order, and OpenSpec workflow. Read before starting a capability. |
 | [`docs/current-state.md`](docs/current-state.md) | **Session handoff** — what the last agent did, when, and what is left. Read at the start; update at the end of every session (see below). |
 
 Do not guess scope or invent requirements. If docs and code disagree, flag the
@@ -36,25 +37,3 @@ history (git history is the archive).
 
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
-
-# Design system — Надворі (Weather Explorer)
-
-This app has a design system. **Read [`design.md`](design.md) before building any
-UI.** It is the canonical `DESIGN.md` decision and explains how the system is
-wired in.
-
-- **Brand:** Надворі ("outdoors") / *Weather Explorer* — calm, Ukrainian-first.
-  Lead with the comfort score (0–100), then the detail. No exclamation marks.
-- **Tokens:** semantic CSS vars in [`app/design-system/tokens/`](app/design-system/tokens/),
-  bridged to Tailwind v4 utilities in [`app/globals.css`](app/globals.css) via
-  `@theme inline`. Consume semantic utilities (`bg-surface`, `text-brand`,
-  `bg-comfort-good-solid`, `rounded-lg`, `shadow-md`) — **never** raw colour
-  ramps or hard-coded values.
-- **Fonts:** Onest (text/display) + JetBrains Mono (all numerics, tabular) via
-  `next/font` in [`app/layout.tsx`](app/layout.tsx). Use `font-mono` for every
-  number.
-- **Theming:** light + dark via `data-theme` on `<html>`; WCAG AA both ways;
-  focus rings always visible.
-- **Source of truth / reference:** [`docs/Weather Explorer Design System/`](docs/Weather%20Explorer%20Design%20System/)
-  (full guidelines, component specs, app recreation). Re-sync steps are in
-  `design.md`.
