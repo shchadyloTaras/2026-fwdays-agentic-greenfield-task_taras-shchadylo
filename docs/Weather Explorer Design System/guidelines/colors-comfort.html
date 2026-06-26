@@ -1,0 +1,36 @@
+<!-- @dsCard group="Colors" viewport="700x180" name="Comfort semantics" subtitle="Good / Fair / Poor — muted, honest, never neon" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 18px 20px; background: var(--surface); font-family: var(--font-sans); display: flex; gap: 12px; }
+  .col { flex: 1; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: var(--radius-pill); font-weight: 600; font-size: 13px; }
+  .solid { height: 40px; border-radius: var(--radius-md); display: flex; align-items: center; padding: 0 14px; color: #fff; font-weight: 700; font-family: var(--font-mono); margin-top: 10px; }
+  .name { font-size: 11px; color: var(--text-muted); letter-spacing: var(--tracking-label); text-transform: uppercase; font-weight: 600; margin: 10px 0 8px; }
+  .range { font-size: 12px; color: var(--text-secondary); font-family: var(--font-mono); margin-top: 6px; }
+</style>
+</head>
+<body>
+  <div class="col">
+    <p class="name">Good</p>
+    <span class="badge" style="background:var(--comfort-good-bg);color:var(--comfort-good-fg)">● Чудово</span>
+    <div class="solid" style="background:var(--comfort-good-solid)">82</div>
+    <p class="range">≥ 70</p>
+  </div>
+  <div class="col">
+    <p class="name">Fair</p>
+    <span class="badge" style="background:var(--comfort-fair-bg);color:var(--comfort-fair-fg)">● Помірно</span>
+    <div class="solid" style="background:var(--comfort-fair-solid)">54</div>
+    <p class="range">40–69</p>
+  </div>
+  <div class="col">
+    <p class="name">Poor</p>
+    <span class="badge" style="background:var(--comfort-poor-bg);color:var(--comfort-poor-fg)">● Краще вдома</span>
+    <div class="solid" style="background:var(--comfort-poor-solid)">28</div>
+    <p class="range">&lt; 40</p>
+  </div>
+</body>
+</html>

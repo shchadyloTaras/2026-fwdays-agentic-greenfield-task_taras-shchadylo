@@ -1,0 +1,30 @@
+<!-- @dsCard group="Type" viewport="700x180" name="Families — Onest & JetBrains Mono" subtitle="Full Cyrillic. Sans for text, mono for numerics" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 18px 22px; background: var(--surface); font-family: var(--font-sans); color: var(--text); display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .name { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); letter-spacing: var(--tracking-label); text-transform: uppercase; margin: 0 0 8px; }
+  .big { font-size: 30px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
+  .ag { font-size: 13px; color: var(--text-secondary); margin: 6px 0 0; }
+  .w { display: flex; gap: 10px; margin-top: 10px; font-size: 14px; }
+  .w span:nth-child(1){font-weight:300} .w span:nth-child(2){font-weight:400} .w span:nth-child(3){font-weight:500} .w span:nth-child(4){font-weight:600} .w span:nth-child(5){font-weight:700}
+</style>
+</head>
+<body>
+  <div>
+    <p class="name">Onest · UI & display</p>
+    <p class="big">Надворі ясно</p>
+    <p class="ag">АаБбВвГ Aa Gg · 0123456789</p>
+    <div class="w"><span>300</span><span>400</span><span>500</span><span>600</span><span>700</span></div>
+  </div>
+  <div>
+    <p class="name">JetBrains Mono · numerics</p>
+    <p class="big" style="font-family:var(--font-mono);font-variant-numeric:tabular-nums">14:32 · 21°</p>
+    <p class="ag" style="font-family:var(--font-mono)">49.84°N 24.03°E · tnum</p>
+    <div class="w" style="font-family:var(--font-mono)"><span>400</span><span>500</span><span>600</span><span>700</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!-- @dsCard group="Brand" viewport="700x160" name="Sky moods" subtitle="Condition gradients drive the animated background" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 18px 20px; background: var(--surface); font-family: var(--font-sans); display: flex; gap: 12px; }
+  .mood { flex: 1; height: 110px; border-radius: var(--radius-lg); display: flex; align-items: flex-end; padding: 10px; box-sizing: border-box; border: 1px solid var(--border-subtle); }
+  .lbl { font-size: 12px; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="mood" style="background:linear-gradient(180deg,var(--sky-day-top),var(--sky-day-bottom))"><span class="lbl" style="color:#1a3a5e">День</span></div>
+  <div class="mood" style="background:linear-gradient(180deg,var(--sky-dusk-top),var(--sky-dusk-bottom))"><span class="lbl" style="color:#6b3f1a">Захід</span></div>
+  <div class="mood" style="background:linear-gradient(180deg,var(--sky-night-top),var(--sky-night-bottom))"><span class="lbl" style="color:#cfe2f4">Ніч</span></div>
+</body>
+</html>

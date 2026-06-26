@@ -1,0 +1,71 @@
+<!-- @dsCard group="Components" viewport="700x520" name="Weather — domain" subtitle="ComfortBadge · DayCard · ConditionIcon · Clock · CityResult" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>
+  body { margin: 0; padding: 22px; background: var(--bg); font-family: var(--font-sans); }
+  .grp { font-size: 11px; color: var(--text-muted); letter-spacing: var(--tracking-label); text-transform: uppercase; font-weight: 600; margin: 0 0 10px; }
+  .block { margin-bottom: 22px; }
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { ComfortBadge, DayCard, ConditionIcon, Clock, CityResult, Card } = window.WeatherExplorerDesignSystem_019e02;
+
+const days = [
+  { weekday:'Пт', condition:'clear',  hi:24, lo:14, precip:5,  wind:'9 км/год',  comfort:84 },
+  { weekday:'Сб', condition:'partly', hi:22, lo:13, precip:18, wind:'12 км/год', comfort:71, weekend:true },
+  { weekday:'Нд', condition:'rain',   hi:17, lo:11, precip:72, wind:'21 км/год', comfort:38, weekend:true },
+];
+
+function Demo() {
+  return (
+    <div>
+      <div className="block">
+        <p className="grp">ComfortBadge</p>
+        <div className="row">
+          <ComfortBadge value={84} size="sm" />
+          <ComfortBadge value={54} size="md" />
+          <ComfortBadge value={28} size="lg" showLabel />
+        </div>
+      </div>
+      <div className="block">
+        <p className="grp">ConditionIcon · Clock</p>
+        <div className="row">
+          <ConditionIcon condition="clear" size={32} />
+          <ConditionIcon condition="partly" size={32} />
+          <ConditionIcon condition="rain" size={32} />
+          <ConditionIcon condition="snow" size={32} />
+          <ConditionIcon condition="clear" night size={32} />
+          <span style={{marginLeft:12}}><Clock timeZone="Europe/Kyiv" withDate /></span>
+        </div>
+      </div>
+      <div className="block">
+        <p className="grp">DayCard</p>
+        <div className="row" style={{alignItems:'stretch'}}>
+          {days.map((d,i)=>(<div key={i} style={{width:180}}><DayCard day={d} weekend={d.weekend} /></div>))}
+        </div>
+      </div>
+      <div className="block" style={{marginBottom:0}}>
+        <p className="grp">CityResult</p>
+        <Card padding="6px" style={{maxWidth:360}}>
+          <CityResult name="Львів" region="Львівська область" country="Україна" flag="🇺🇦" active />
+          <CityResult name="Одеса" region="Одеська область" country="Україна" flag="🇺🇦" />
+        </Card>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>
+</body>
+</html>

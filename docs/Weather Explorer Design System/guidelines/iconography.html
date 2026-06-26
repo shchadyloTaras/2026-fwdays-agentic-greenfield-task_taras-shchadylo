@@ -1,0 +1,43 @@
+<!-- @dsCard group="Brand" viewport="700x200" name="Iconography — Lucide" subtitle="1.75 stroke, rounded caps. Weather + UI set" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<style>
+  body { margin: 0; padding: 18px 22px; background: var(--surface); font-family: var(--font-sans); color: var(--text); }
+  .grp { font-size: 11px; color: var(--text-muted); letter-spacing: var(--tracking-label); text-transform: uppercase; font-weight: 600; margin: 0 0 10px; }
+  .row { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 16px; }
+  .ic { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 56px; }
+  .ic i { color: var(--text-secondary); }
+  .ic span { font-size: 10px; color: var(--text-faint); font-family: var(--font-mono); }
+  [data-lucide] { width: 26px; height: 26px; stroke-width: 1.75; }
+</style>
+</head>
+<body>
+  <p class="grp">Weather conditions</p>
+  <div class="row">
+    <div class="ic"><i data-lucide="sun"></i><span>sun</span></div>
+    <div class="ic"><i data-lucide="moon"></i><span>moon</span></div>
+    <div class="ic"><i data-lucide="cloud-sun"></i><span>part</span></div>
+    <div class="ic"><i data-lucide="cloud"></i><span>cloud</span></div>
+    <div class="ic"><i data-lucide="cloud-rain"></i><span>rain</span></div>
+    <div class="ic"><i data-lucide="cloud-snow"></i><span>snow</span></div>
+    <div class="ic"><i data-lucide="cloud-lightning"></i><span>storm</span></div>
+    <div class="ic"><i data-lucide="cloud-fog"></i><span>fog</span></div>
+  </div>
+  <p class="grp">UI & data</p>
+  <div class="row" style="margin-bottom:0">
+    <div class="ic"><i data-lucide="search"></i><span>search</span></div>
+    <div class="ic"><i data-lucide="map-pin"></i><span>pin</span></div>
+    <div class="ic"><i data-lucide="locate-fixed"></i><span>locate</span></div>
+    <div class="ic"><i data-lucide="sunrise"></i><span>sunrise</span></div>
+    <div class="ic"><i data-lucide="sunset"></i><span>sunset</span></div>
+    <div class="ic"><i data-lucide="wind"></i><span>wind</span></div>
+    <div class="ic"><i data-lucide="droplets"></i><span>precip</span></div>
+    <div class="ic"><i data-lucide="gauge"></i><span>score</span></div>
+  </div>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

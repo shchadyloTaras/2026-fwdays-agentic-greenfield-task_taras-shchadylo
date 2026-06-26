@@ -1,0 +1,25 @@
+<!-- @dsCard group="Brand" viewport="700x150" name="Logo & wordmark" subtitle="Надворі — a sun over a calm horizon" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 0; background: var(--surface); font-family: var(--font-sans); display: grid; grid-template-columns: 1fr 1fr; }
+  .cell { display: flex; align-items: center; justify-content: center; padding: 24px; gap: 12px; }
+  .dark { background: var(--sky-900); }
+  .mark { width: 56px; height: 56px; }
+  .wm { height: 44px; }
+  .cap { position: absolute; font-size: 10px; font-family: var(--font-mono); color: var(--text-faint); margin: 0; }
+</style>
+</head>
+<body>
+  <div class="cell">
+    <img class="wm" src="../assets/logo-wordmark.svg" alt="Надворі wordmark">
+  </div>
+  <div class="cell dark">
+    <img class="mark" src="../assets/logo-mark.svg" alt="Надворі mark">
+    <span style="color:#fff;font-size:26px;font-weight:700;letter-spacing:-.01em">Надворі</span>
+  </div>
+</body>
+</html>

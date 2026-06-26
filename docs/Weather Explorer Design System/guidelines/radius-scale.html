@@ -1,0 +1,23 @@
+<!-- @dsCard group="Spacing" viewport="700x140" name="Radius scale" subtitle="Soft, rounded-but-not-bubbly corners" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 20px 22px; background: var(--surface); font-family: var(--font-sans); display: flex; gap: 16px; align-items: flex-end; }
+  .item { text-align: center; }
+  .box { width: 72px; height: 56px; background: var(--brand-soft); border: 1.5px solid var(--brand-border); }
+  .tk { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); margin-top: 8px; display: block; }
+</style>
+</head>
+<body>
+  <div class="item"><div class="box" style="border-radius:var(--radius-xs)"></div><span class="tk">xs · 4</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-sm)"></div><span class="tk">sm · 8</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-md)"></div><span class="tk">md · 12</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-lg)"></div><span class="tk">lg · 16</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-xl)"></div><span class="tk">xl · 22</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-2xl)"></div><span class="tk">2xl · 28</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-pill);width:96px"></div><span class="tk">pill</span></div>
+</body>
+</html>

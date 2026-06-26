@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "./design-system/tokens.css";
+
+/* ============================================================
+   Tailwind v4 bridge for the Надворі design system.
+   `@theme inline` maps semantic tokens to Tailwind utilities and
+   emits var() references (not resolved values), so utilities like
+   `bg-surface` / `text-comfort-good-fg` follow the active theme
+   ([data-theme="dark"]) instead of being frozen at build time.
+   Consume these semantic utilities — never the raw ramps.
+   ============================================================ */
+@theme inline {
+  /* Fonts */
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  /* Brand & accent */
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-active: var(--brand-active);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-border: var(--brand-border);
+  --color-brand-on: var(--brand-on);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-on: var(--accent-on);
+
+  /* Surfaces */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-surface-hover: var(--surface-hover);
+
+  /* Text */
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
+  --color-text-on-brand: var(--text-on-brand);
+  --color-text-link: var(--text-link);
+
+  /* Borders */
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-border-subtle: var(--border-subtle);
+
+  /* Comfort semantics */
+  --color-comfort-good-bg: var(--comfort-good-bg);
+  --color-comfort-good-fg: var(--comfort-good-fg);
+  --color-comfort-good-solid: var(--comfort-good-solid);
+  --color-comfort-fair-bg: var(--comfort-fair-bg);
+  --color-comfort-fair-fg: var(--comfort-fair-fg);
+  --color-comfort-fair-solid: var(--comfort-fair-solid);
+  --color-comfort-poor-bg: var(--comfort-poor-bg);
+  --color-comfort-poor-fg: var(--comfort-poor-fg);
+  --color-comfort-poor-solid: var(--comfort-poor-solid);
+
+  /* Radii (→ rounded-md, rounded-lg, rounded-xl, rounded-pill …) */
+  --radius-xs: var(--radius-xs);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-pill: var(--radius-pill);
+
+  /* Elevation (→ shadow-sm, shadow-md …) */
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+}

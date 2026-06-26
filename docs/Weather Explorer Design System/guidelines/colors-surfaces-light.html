@@ -1,0 +1,29 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Surfaces & text — Light" subtitle="Semantic roles on the light theme" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 18px 20px; background: var(--bg); font-family: var(--font-sans); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .tile { border-radius: var(--radius-md); border: 1px solid var(--border); padding: 12px; height: 84px; box-sizing: border-box; }
+  .tag { font-size: 11px; font-family: var(--font-mono); color: var(--text-muted); }
+  .t1 { color: var(--text); font-weight: 600; font-size: 14px; }
+  .t2 { color: var(--text-secondary); font-size: 13px; }
+  .t3 { color: var(--text-muted); font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="tile" style="background:var(--bg)"><div class="tag">--bg</div><div class="t2" style="margin-top:24px">page</div></div>
+    <div class="tile" style="background:var(--surface)"><div class="tag">--surface</div><div class="t2" style="margin-top:24px">card</div></div>
+    <div class="tile" style="background:var(--surface-sunken)"><div class="tag">--surface-sunken</div><div class="t2" style="margin-top:24px">field</div></div>
+    <div class="tile" style="background:var(--brand-soft)"><div class="tag">--brand-soft</div><div class="t2" style="margin-top:24px;color:var(--brand)">tint</div></div>
+    <div class="tile" style="background:var(--surface)"><div class="t1">--text</div><div class="t2">--text-secondary</div><div class="t3">--text-muted</div></div>
+    <div class="tile" style="background:var(--brand);color:#fff"><div class="tag" style="color:#cfe2f4">--brand</div><div style="margin-top:20px;font-weight:600">--text-on-brand</div></div>
+    <div class="tile" style="background:var(--surface);border-color:var(--border-strong)"><div class="tag">--border-strong</div></div>
+    <div class="tile" style="background:var(--accent-soft)"><div class="tag">--accent-soft</div><div class="t2" style="margin-top:24px;color:var(--amber-700)">accent</div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* ============================================================
+   Fonts — Weather Explorer
+   Onest      : UI + display. Full Cyrillic, calm humanist sans.
+   JetBrains Mono : numerics (temperatures, clock, data labels).
+                    Full Cyrillic, true tabular figures.
+   Both are loaded from Google Fonts' CDN via @font-face-bearing
+   stylesheets. Consumers self-host by replacing the src URLs.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
