@@ -5,14 +5,16 @@
 
 ## Last updated
 
-`2026-06-26T22:08:22Z`
+`2026-06-26T22:19:35Z`
 
 ## Last agent action
 
 Closed out `app-shell` task 6.4. Opened PR #1, discovered the Vercel preview
 404'd on every app route, root-caused it to an **unset Framework Preset** on the
 Vercel project, set it to **Next.js**, redeployed, and confirmed the homepage
-renders (HTTP 200). Recorded the TTFB baseline. `app-shell` is now **21/21**.
+renders (HTTP 200). Recorded the TTFB baseline. Brought `app-shell` to
+**21/21**, then **synced** its spec into `openspec/specs/` and **archived** the
+change.
 
 ## Changes made
 
@@ -48,8 +50,10 @@ renders (HTTP 200). Recorded the TTFB baseline. `app-shell` is now **21/21**.
 
 ## Open items
 
-- **`app-shell` is ready for archive + sync** (`/opsx:archive` + `/opsx:sync`).
-  Not done yet — awaiting explicit go-ahead.
+- **`app-shell` is synced + archived.** Spec promoted to
+  `openspec/specs/app-shell/spec.md` (8 requirements, 16 scenarios); change moved
+  to `openspec/changes/archive/2026-06-27-app-shell/`. `openspec list` shows no
+  active changes.
 - Add a `test` script + Vitest setup (or explicitly defer/amend NFR-DX-01);
   `npm test` currently fails with "Missing script: test".
 - NFR-PERF-01 cold-start optimization: consider making the empty-state homepage
