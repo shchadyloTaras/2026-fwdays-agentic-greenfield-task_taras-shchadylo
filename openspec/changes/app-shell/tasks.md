@@ -34,7 +34,7 @@
 - [x] 6.1 Run `npm run lint`, `npx tsc --noEmit`, and `npm run build` — all pass
 - [x] 6.2 Manual check at mobile (<768), tablet (768–1279), and desktop (≥1280): grid columns, hero centering, theme toggle, footer links
 - [x] 6.3 Keyboard check: theme indicator focus ring and accessible name (NFR-A11Y-01)
-- [ ] 6.4 Confirm Vercel preview builds on PR (TC-DEPLOY-01); note TTFB baseline for NFR-PERF-01
+- [x] 6.4 Confirm Vercel preview builds on PR (TC-DEPLOY-01); note TTFB baseline for NFR-PERF-01 — PR #1; preview renders 200 (homepage); TTFB baseline ~250–290 ms warm (cold start ~600 ms). Root cause fixed: Vercel Framework Preset was unset → set to Next.js.
 
 ## 7. Handoff
 
