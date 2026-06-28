@@ -8,6 +8,8 @@ Taras Shchadylo
 
 Код: https://github.com/shchadyloTaras/gitwarden
 
+**Лендинг:** https://gitwarden.vercel.app/ — маркетинговий сайт продукту на Astro, зібраний тим самим агентним процесом (окрема feature-track «Landing»). Скриншоти на сайті — справжні захоплення з Electron-застосунку через `astro:assets`, а не мокапи; деплой на Vercel (preview на кожен PR).
+
 ## Відео-демо (1–2 хв)
 
 Video: `<ВСТАВ ЛІНК — YouTube (unlisted) / Loom / Drive>`
