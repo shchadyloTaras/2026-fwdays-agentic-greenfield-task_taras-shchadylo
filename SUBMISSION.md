@@ -14,7 +14,7 @@ Taras Shchadylo
 
 ## Відео-демо (1–2 хв)
 
-Video: `<ВСТАВ ЛІНК — YouTube (unlisted) / Loom / Drive>`
+Video: https://drive.google.com/file/d/1s8yq1IlGsDcBI6iNh1X1zUVYvn6riotl/view?usp=sharing
 
 ## Які практики Agentic Engineering застосовано
 
@@ -41,6 +41,6 @@ https://github.com/shchadyloTaras/gitwarden
 ### Чекліст
 
 - [x] Вказано справжнє ім'я
-- [ ] Додано посилання на відео-демо (1–2 хв) ← постав `[x]`, коли вставиш лінк
+- [x] Додано посилання на відео-демо (1–2 хв)
 - [x] Описано застосовані практики Agentic Engineering
 - [x] Результат робочий і доведений до кінця
